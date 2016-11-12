@@ -1,0 +1,3 @@
+[submodule "afp-2016"]
+	path = afp-2016
+	url = https://github.com/larsrh/mirror-afp-2016.git
