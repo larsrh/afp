@@ -1,5 +1,6 @@
 lazy val standardSettings = Seq(
-  organization := "info.hupel",
+  organization := "info.hupel.afp",
+  sonatypeProfileName := "info.hupel",
   homepage := Some(url("http://lars.hupel.info/libisabelle/")),
   licenses := Seq(
     "MIT" -> url("http://opensource.org/licenses/MIT"),
