@@ -1,3 +1,6 @@
 [submodule "afp-2016"]
 	path = afp-2016
 	url = https://github.com/larsrh/mirror-afp-2016.git
+[submodule "afp-2016-1"]
+	path = afp-2016-1
+	url = https://github.com/larsrh/mirror-afp-2016-1.git
