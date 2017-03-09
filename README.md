@@ -15,11 +15,11 @@ Since the AFP is a "rolling release" library which usually does not break compat
 
 ## Compatibility matrix
 
-| AFP version  | libisabelle version | Isabelle versions |
-| ------------ | ------------------- | ----------------- |
-| 1.0.x        | 0.7.x               | 2016, 2016-1      |
+| AFP version  | sbt-libisabelle version | Isabelle versions |
+| ------------ | ----------------------- | ----------------- |
+| 1.0.x        | 0.5.x                   | 2016, 2016-1      |
 
-For compatibility with the SBT plugin, check its [compatibility matrix](https://github.com/larsrh/sbt-libisabelle/#compatibility-matrix).
+For compatibility with `libisabelle` itself, check the [compatibility matrix](https://github.com/larsrh/sbt-libisabelle/#compatibility-matrix) of `sbt-libisabelle`.
 
 ## Usage with isabellectl
 
