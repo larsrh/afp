@@ -4,3 +4,6 @@
 [submodule "afp-2016-1"]
 	path = afp-2016-1
 	url = https://github.com/isabelle-prover/mirror-afp-2016-1.git
+[submodule "afp-2017"]
+	path = afp-2017
+	url = https://github.com/isabelle-prover/mirror-afp-2017.git

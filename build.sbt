@@ -56,7 +56,7 @@ lazy val root = project.in(file("."))
   .settings(standardSettings)
   .settings(noPublishSettings)
   .aggregate(
-    afp2016, afp2016_1
+    afp2016, afp2016_1, afp2017
   )
 
 lazy val afp2016 = project.in(file("afp-2016"))
@@ -74,6 +74,15 @@ lazy val afp2016_1 = project.in(file("afp-2016-1"))
   .settings(standardSettings)
   .settings(
     isabelleVersions := Seq(Version.Stable("2016-1")),
+    isabelleSessions in Compile := Seq("Open_Induction")
+  )
+
+lazy val afp2017 = project.in(file("afp-2017"))
+  .enablePlugins(LibisabellePlugin)
+  .settings(moduleName := "afp-2017")
+  .settings(standardSettings)
+  .settings(
+    isabelleVersions := Seq(Version.Stable("2017-RC3")),
     isabelleSessions in Compile := Seq("Open_Induction")
   )
 
