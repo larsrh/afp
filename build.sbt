@@ -44,8 +44,8 @@ lazy val standardSettings = Seq(
 )
 
 lazy val noPublishSettings = Seq(
-  publish := (),
-  publishLocal := (),
+  publish := (()),
+  publishLocal := (()),
   publishArtifact := false
 )
 
@@ -64,7 +64,7 @@ lazy val afp2016 = project.in(file("afp-2016"))
   .settings(moduleName := "afp-2016")
   .settings(standardSettings)
   .settings(
-    isabelleVersions := Seq("2016"),
+    isabelleVersions := Seq(Version.Stable("2016")),
     isabelleSessions in Compile := Seq("Open_Induction")
   )
 
@@ -73,7 +73,7 @@ lazy val afp2016_1 = project.in(file("afp-2016-1"))
   .settings(moduleName := "afp-2016-1")
   .settings(standardSettings)
   .settings(
-    isabelleVersions := Seq("2016-1"),
+    isabelleVersions := Seq(Version.Stable("2016-1")),
     isabelleSessions in Compile := Seq("Open_Induction")
   )
 
@@ -82,6 +82,9 @@ lazy val afp2016_1 = project.in(file("afp-2016-1"))
 
 import ReleaseTransformations._
 
+releaseVcsSign := true
+releaseCrossBuild := false
+
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,
   inquireVersions,
@@ -89,10 +92,10 @@ releaseProcess := Seq[ReleaseStep](
   setReleaseVersion,
   commitReleaseVersion,
   tagRelease,
-  ReleaseStep(action = Command.process("publishSigned", _)),
+  releaseStepCommand("publishSigned"),
   setNextVersion,
   commitNextVersion,
-  ReleaseStep(action = Command.process("sonatypeRelease", _))
+  releaseStepCommand("sonatypeRelease")
 )
 
 
