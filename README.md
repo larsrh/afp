@@ -15,10 +15,11 @@ Since the AFP is a "rolling release" library which usually does not break compat
 
 ## Compatibility matrix
 
-| AFP version  | sbt-libisabelle version | Isabelle versions  |
-| ------------ | ----------------------- | ------------------ |
-| 1.0.x        | 0.5.x, 0.6.x            | 2016, 2016-1       |
-| 1.1.x        | 0.5.x, 0.6.x            | 2016, 2016-1, 2017 |
+| AFP version      | sbt-libisabelle version | Isabelle versions  |
+| ---------------  | ----------------------- | ------------------ |
+| 1.0.x            | 0.5.x – 0.7.x           | 2016, 2016-1       |
+| 1.1.x            | 0.5.x – 0.7.x           | 2016, 2016-1, 2017 |
+| 2.0.x (upcoming) | 0.5.x – 0.7.x           | 2017, 2018         |
 
 
 For compatibility with `libisabelle` itself, check the [compatibility matrix](https://github.com/larsrh/sbt-libisabelle/#compatibility-matrix) of `sbt-libisabelle`.
@@ -31,8 +32,8 @@ It will automatically use the latest available AFP package for the appropriate I
 ## Usage from SBT
 
 ```scala
-libraryDependencies += "info.hupel.afp" % afp-2016-1" % "1.0.+"
+libraryDependencies += "info.hupel.afp" % afp-2017" % "1.1.+"
 ```
 
-This will select the latest available AFP package for Isabelle2016-1.
-Note that there are no "cross" artifacts, i.e., packages that work for both Isabelle2016 and 2016-1.
+This will select the latest available AFP package for Isabelle2017.
+Note that there are no "cross" artifacts, i.e., packages that work for multiple Isabelle versions.
