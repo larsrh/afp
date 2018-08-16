@@ -73,7 +73,7 @@ lazy val afp2018 = project.in(file("afp-2018"))
   .settings(moduleName := "afp-2018")
   .settings(standardSettings)
   .settings(
-    isabelleVersions := Seq(Version.Stable("2018-RC2")),
+    isabelleVersions := Seq(Version.Stable("2018")),
     isabelleSessions in Compile := Seq("Open_Induction")
   )
 
