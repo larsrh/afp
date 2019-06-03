@@ -19,7 +19,8 @@ Since the AFP is a "rolling release" library which usually does not break compat
 | ---------------  | ----------------------- | ------------------ |
 | 1.0.x            | 0.5.x – 0.7.x           | 2016, 2016-1       |
 | 1.1.x            | 0.5.x – 0.7.x           | 2016, 2016-1, 2017 |
-| 2.0.x (upcoming) | 0.5.x – 0.7.x           | 2017, 2018         |
+| 2.0.x            | 0.5.x – 0.7.x           | 2017, 2018         |
+| 2.1.x            | 0.5.x – 0.7.x           | 2017, 2018, 2019   |
 
 
 For compatibility with `libisabelle` itself, check the [compatibility matrix](https://github.com/larsrh/sbt-libisabelle/#compatibility-matrix) of `sbt-libisabelle`.
